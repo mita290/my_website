@@ -1,0 +1,115 @@
+body {
+    background-color: lightgoldenrodyellow;
+    margin: 10rem;
+    padding: 0;
+    margin-left: 5rem;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: larger;
+    font-weight: 800;
+    font-style: normal;
+    
+    transition: background-color 0.5s ease; /* Smooth transition for color change */
+}
+#main{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    background-color: lavender;
+    padding-bottom: 100%;
+}
+.container {
+    
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.item {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    /*margin-bottom: 10rem;  Add some space between items */
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    position: relative; /* Change to relative to position dropdowns correctly */
+    background-color: rgb(189, 243, 255);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.dropdown .panel img {
+    width: 30%; /* Each image takes up 30% of the container */
+    margin: 10px; /* Add some space between images */
+    height: auto;
+    aspect-ratio: 16/9; /* Set the aspect ratio to 4:3 */
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.dropdown .panel img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+    font-size: 6rem;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: -boxcontent;
+  }
+
+  .navbar {
+    
+    display: flex;
+    gap: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #999e82;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+    z-index: 10;
+  }
+  
+  .navbar a {
+    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2rem;
+    text-decoration: none;
+    
+  }
+
+  .navbar a:hover{
+    padding-bottom: none;
+    border-radius: 25px;;
+    background-image: linear-gradient(to right, rgb(229, 231, 138) , rgb(163, 198, 93));
+    background-color: white;
+    outline-color: 5px black;
+    color: white;
+    text-shadow: #fff;
+  }
+

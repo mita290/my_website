@@ -1,0 +1,176 @@
+/* Add styles for the collage */
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  opacity: 50%;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  transition: top 0.3s; /* Smooth transition for hiding/showing */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  background-color: black;  
+}
+
+#navbar a{
+  padding: 20px;
+  padding-top:5px;
+  border: none;
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+#navbar a:hover{
+  border-radius: 25px;;
+  background-image: linear-gradient(to right, black , gray);
+  background-color: white;
+  outline-color: 5px black;
+  color: white;
+  text-shadow: #fff;
+}
+
+
+
+
+/* Hide the navbar on scroll down */
+#navbar.hidden {
+  top: -75px; /* Adjust as needed */
+}
+
+#page_1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh; /* Use viewport height */
+    width: 100vw; /* Use viewport width */
+    overflow: hidden; /* Hide any overflowing content */
+}
+#page_1 img {
+    max-height: 100%; 
+    max-width: 100%; /* Ensure the image does not exceed the viewport width */
+    object-fit: contain;
+    scroll-padding-left: 10px;
+    scroll-padding-right: 10px;
+}
+
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity:75%;
+    padding: 20px;
+}
+
+#typewriter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    opacity:75%;
+    padding: 20px;
+}
+#typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  /*#two{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    z-index: 10;
+   }*/
+footer{
+  z-index: 1000;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  opacity: 50%;
+  padding-top: 0;
+
+}
+footer a{
+  padding-top: 10px;
+  padding-bottom: 0;
+  color: white;
+  margin-top:10px;
+  margin-bottom: 0;
+  width: 50px;
+  padding-left: 20px;
+
+}
+
+footer a:hover{  
+  padding-bottom: none;
+  border-radius: 25px;;
+  background-image: linear-gradient(to right, black , gray);
+  background-color: white;
+  outline-color: 5px black;
+  color: white;
+  text-shadow: #fff;
+}
+.fa{
+  transition: all 1s;
+  box-sizing: border-box;
+}
+.fa:hover {
+  transform: scale(2) rotate(360deg);
+}
